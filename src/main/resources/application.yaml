@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/question_book
+    username: tonmoyjdbc
+    password: tonmoy
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
