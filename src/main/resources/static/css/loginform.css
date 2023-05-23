@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+.container1 {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btnn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btnn:hover {
+    background-color: #45a049;
+}
+
+/* Background Animation */
+.bg-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bg-animation span {
+    position: absolute;
+    display: block;
+    background-color: #4CAF50;
+    opacity: 0;
+    border-radius: 50%;
+    animation: animate 10s linear infinite;
+}
+
+.bg-animation span:nth-child(1) {
+    width: 400px;
+    height: 400px;
+    left: 5%;
+    top: 60%;
+    animation-delay: 0s;
+}
+
+.bg-animation span:nth-child(2) {
+    width: 400px;
+    height: 400px;
+    left: 40%;
+    top: 70%;
+    animation-delay: 2s;
+}
+
+.bg-animation span:nth-child(3) {
+    width: 400px;
+    height: 400px;
+    left: 70%;
+    top: 50%;
+    animation-delay: 4s;
+}
+
+.bg-animation span:nth-child(4) {
+    width: 400px;
+    height: 400px;
+    left: 5%;
+    top: 60%;
+    animation-delay: 6s;
+}
+
+.bg-animation span:nth-child(5) {
+    width: 300px;
+    height: 300px;
+    left: 80%;
+    top: 80%;
+    animation-delay: 8s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0) scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg) scale(1);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+}
