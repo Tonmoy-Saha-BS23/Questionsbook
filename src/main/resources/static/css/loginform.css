@@ -110,7 +110,10 @@ input[type="password"] {
     top: 60%;
     animation-delay: 6s;
 }
-
+a{
+    text-decoration: none !important;
+    color: blue;
+}
 .bg-animation span:nth-child(5) {
     width: 300px;
     height: 300px;
