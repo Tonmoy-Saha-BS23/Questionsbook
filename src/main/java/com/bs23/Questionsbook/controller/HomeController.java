@@ -2,6 +2,7 @@ package com.bs23.Questionsbook.controller;
 
 import com.bs23.Questionsbook.entity.User;
 import com.bs23.Questionsbook.service.UserService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.logging.Logger;
 
+@Tag(name = "User")
 @Controller
 public class HomeController {
     private UserService userService;
